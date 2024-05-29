@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import Products from '../assets/products.json';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
-import image1 from '../assets/1.jpg';
+
 
 function BodywashBody() {
     const { addToCart, cartItems } = useContext(ShoppingCartContext);
