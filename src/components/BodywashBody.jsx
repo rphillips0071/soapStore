@@ -27,6 +27,14 @@ function BodywashBody() {
                             <button className="product_button" onClick={() => addToCart(product.id)}>
                                 Add to Bag {cartItemsAmount > 0 && <>({cartItemsAmount})</>}
                             </button>
+                            <div className='loadingimages'>
+                                <img src={img6} alt="" />
+                                <img src={img7} alt="" />
+                                <img src={img8} alt="" />
+                                <img src={img9} alt="" />
+                                <img src={img10} alt="" />
+
+                            </div>
                         </div>
                     );
                 })}

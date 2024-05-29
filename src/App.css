@@ -265,6 +265,9 @@ h3 {
 .products_heading {
     text-align: center;
 }
+.loadingimages {
+    display: none;
+}
 @media (max-width: 750px) {
 .navbar_container{
     justify-content: flex-end;
