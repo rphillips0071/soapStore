@@ -2,12 +2,6 @@ import React, { useContext } from 'react';
 import Products from '../assets/products.json';
 import { ShoppingCartContext } from '../context/ShoppingCartContext';
 
-import img6 from './assets/6.jpg';
-import img7 from './assets/7.jpg';
-import img8 from './assets/8.jpg';
-import img9 from './assets/9.jpg';
-import img10 from './assets/10.jpg';
-
 
 function BodywashBody() {
     const { addToCart, cartItems } = useContext(ShoppingCartContext);
@@ -27,14 +21,7 @@ function BodywashBody() {
                             <button className="product_button" onClick={() => addToCart(product.id)}>
                                 Add to Bag {cartItemsAmount > 0 && <>({cartItemsAmount})</>}
                             </button>
-                            <div className='loadingimages'>
-                                <img src={img6} alt="" />
-                                <img src={img7} alt="" />
-                                <img src={img8} alt="" />
-                                <img src={img9} alt="" />
-                                <img src={img10} alt="" />
 
-                            </div>
                         </div>
                     );
                 })}
